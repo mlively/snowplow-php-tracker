@@ -2,13 +2,13 @@ PHP Analytics for Snowplow
 ==========================
 [![Build Status][travis-image]][travis]
 [![Coverage Status][coveralls-image]][coveralls]
-
 [![Latest Stable Version][packagist-image-1]][packagist-1]
 [![Total Downloads][packagist-image-2]][packagist-2]
+[![Dependency Status][versioneye-image]][versioneye]
 
 ##Overview
 
-Add analytics into your PHP apps and code with the [Snowplow][1] event tracker for [PHP][2].
+Add analytics into your PHP apps and scripts with the **[Snowplow][1]** event tracker for **[PHP][2]**.
 
 With this tracker you can collect event data from your PHP based applications, games and frameworks.
 
@@ -37,13 +37,15 @@ limitations under the License.
 
 [travis]: https://travis-ci.org/snowplow/snowplow-php-tracker
 [travis-image]: https://travis-ci.org/snowplow/snowplow-php-tracker.svg?branch=develop
-[coveralls]: https://coveralls.io/r/snowplow/snowplow-php-tracker
-[coveralls-image]: https://coveralls.io/repos/snowplow/snowplow-php-tracker/badge.png
+[coveralls]: https://coveralls.io/r/snowplow/snowplow-php-tracker?branch=develop
+[coveralls-image]: https://coveralls.io/repos/snowplow/snowplow-php-tracker/badge.png?branch=develop
+[versioneye]: https://www.versioneye.com/user/projects/542ac2c1fc3f5c175f000035
+[versioneye-image]: https://www.versioneye.com/user/projects/542ac2c1fc3f5c175f000035/badge.svg?style=flat
 
-[packagist-1]: https://packagist.org/packages/snowplow/snowplow-php-tracker
-[packagist-image-1]: https://poser.pugx.org/snowplow/snowplow-php-tracker/v/stable.png
-[packagist-2]: https://packagist.org/packages/snowplow/snowplow-php-tracker
-[packagist-image-2]: https://poser.pugx.org/snowplow/snowplow-php-tracker/downloads.png
+[packagist-1]: https://packagist.org/packages/snowplow/snowplow-tracker
+[packagist-image-1]: https://poser.pugx.org/snowplow/snowplow-tracker/v/stable.png
+[packagist-2]: https://packagist.org/packages/snowplow/snowplow-tracker
+[packagist-image-2]: https://poser.pugx.org/snowplow/snowplow-tracker/downloads.png
 
 [techdocs-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/techdocs.png
 [setup-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/setup.png

@@ -23,10 +23,12 @@
 namespace Snowplow\Tracker;
 
 class Subject {
-
     // Subject Constants
-
     const DEFAULT_PLATFORM = "srv";
+
+    // Subject Parameters
+    private $tracker_settings;
+    private $nuid = "";
 
     /**
      * Constructs an array in which subject parameters are stored
@@ -45,7 +47,6 @@ class Subject {
     }
 
     // Setter Functions
-
     /**
      * Sets the platform from which the event is fired
      *
@@ -60,7 +61,7 @@ class Subject {
      *
      * @param string $userId
      */
-    public function setUserID($userId) {
+    public function setUserId($userId) {
         $this->tracker_settings["uid"] = $userId;
     }
 
@@ -109,5 +110,50 @@ class Subject {
      */
     public function setLanguage($language) {
         $this->tracker_settings["lang"] = $language;
+    }
+
+    /**
+     * Sets the client's IP Address
+     *
+     * @param string $ipAddress
+     */
+    public function setIpAddress($ipAddress) {
+        $this->tracker_settings["ip"] = $ipAddress;
+    }
+
+    /**
+     * Sets the Useragent
+     *
+     * @param string $useragent
+     */
+    public function setUseragent($useragent) {
+        $this->tracker_settings["ua"] = $useragent;
+    }
+
+    /**
+     * Sets the Network User ID
+     *
+     * @param string $networkUserId
+     */
+    public function setNetworkUserId($networkUserId) {
+        $this->nuid = $networkUserId;
+    }
+
+    /**
+     * Sets the domain User ID
+     *
+     * @param string $domainUserId
+     */
+    public function setDomainUserId($domainUserId) {
+        $this->tracker_settings["duid"] = $domainUserId;
+    }
+
+    // Subject Return Functions
+    public function returnTrackerSettings() {
+        return $this->tracker_settings;
+    }
+
+    public function returnNetworkUserId() {
+        return $this->nuid;
     }
 }

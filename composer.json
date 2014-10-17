@@ -1,17 +1,32 @@
 {
-    "name": "snowplow/Tracker",
+    "name": "snowplow/snowplow-tracker",
     "description": "Snowplow event tracker for PHP. Add analytics into your PHP apps and code",
     "type": "library",
+    "license": "Apache-2.0",
+    "keywords": [
+        "snowplow",
+        "analytics",
+        "event analytics"
+    ],
+    "support": {
+        "email": "support@snowplowanalytics.com"
+    },
     "require": {
         "rmccue/requests": ">=1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.0.*",
+        "phpunit/phpunit": "4.2.*",
         "satooshi/php-coveralls": "dev-master"
     },
+    "homepage": "http://snowplowanalytics.com/",
     "autoload": {
         "psr-4": {
             "Snowplow\\Tracker\\": "src"
         }
-    }
+    },
+    "authors": [
+        {
+            "name": "Joshua Beemster"
+        }
+    ]
 }
